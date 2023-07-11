@@ -1,0 +1,111 @@
+.tttfooter{
+    overflow-y: hidden ! important;
+    overflow-x: hidden ! important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://vape-room.gr/images/tablefooter.png);
+    color: #d4d4d4;
+}
+.tttfooter>tr>th {
+    border:none!important;
+    height:75px;
+}
+
+.tttheader{
+    overflow-y: hidden ! important;
+    overflow-x: hidden ! important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://vape-room.gr/images/tableheader.png);
+}
+
+.tttheader>tr>th {
+    border: none!important;
+}
+
+.tttbody{
+    overflow-y: hidden ! important;
+    overflow-x: hidden ! important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://vape-room.gr/images/tablebody.png);
+    color: #d4d4d4;
+}
+
+.tttbody>tr>td{
+    border-top: 1px solid #585554!important;
+}
+.tttbody>tr>td>a{
+    color: #00acec;
+}
+
+.tttmain{
+    border:none;
+    background: none;
+}
+
+
+.navbar-static-top, .navbar-fixed-top, .navbar-fixed-bottom {
+    border-radius: 0;
+    background-image: url(https://vape-room.gr/images/ca2.jpg);
+}
+
+#sidebar{
+    background-image: url(https://vape-room.gr/images/cafull.jpg);
+}
+
+.navbar-header {
+    background-image: url(https://vape-room.gr/images/repeatablemenu.jpg);
+    background-size: contain;
+}
+
+.navbar-fixed-top>.container-fluid {
+    background-image: url(https://vape-room.gr/images/repeatablemenu.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 768px){
+    .navbar-nav {
+        background-image: url(https://vape-room.gr/images/repeatablemenu.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 95%;
+    }
+    .navbar-right{
+        background: none;
+    }
+    .imm{
+        display: inline-block!important;
+        background:none;
+    }
+}
+
+.sidebar-header:hover{
+    background-image: url(https://vape-room.gr/images/tableheader.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.active-head {
+    background-image: url(https://vape-room.gr/images/tableheader.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.nav-links>li>a{
+    overflow-y: hidden ! important;
+    overflow-x: hidden ! important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://vape-room.gr/images/tablebody.png);
+    color:white;
+}
+
+.nav-links > li > a:hover {
+    overflow-y: hidden ! important;
+    overflow-x: hidden ! important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://vape-room.gr/images/tablebodyhover.jpg);
+    color:white;
+}

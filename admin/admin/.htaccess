@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^([^.]+)$ $1.php [NC,L]
+<filesMatch ".(xml)$">
+Header set Cache-Control "max-age=0, public"
+</filesMatch>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^gm.barbreon.com/admin$
+RewriteRule ^$ https://gm.barbreon.com/admin/index [L,R=301]

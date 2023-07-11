@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration | Barbreon</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+  <link href="css/plugins/steps/jquery.steps.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+  <div class="row" style=" height:100%;">
+    <div class="col-lg-12" style=" height:100%;">
+      <div class="ibox">
+        <div class="ibox-title" style="border-top-left-radius: 0px;border-top-right-radius: 0px;"></div>
+        <div class="ibox-content">
+          <h2>Barbreon Registration</h2>
+          <p>Here you can choose your credentials and create your private service / shop management portal and appointments booking page</p>
+          <form id="form" action="#" class="wizard-big">
+            <h1>Account</h1>
+            <fieldset>
+              <h2>Account Information</h2>
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="form-group">
+                    <label>Nickname</label>
+                    <input id="userNickname" name="userNickname" type="text" class="form-control required">
+                  </div>
+                  <div class="form-group">
+                    <label>Password *</label>
+                    <input id="password" name="password" type="text" class="form-control required">
+                  </div>
+                  <div class="form-group">
+                    <label>Confirm Password *</label>
+                    <input id="confirm" name="confirm" type="text" class="form-control required">
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="text-center">
+                    <div style="margin-top: 20px">
+                      <i class="fa fa-sign-in" style="font-size: 180px;color: #e5e5e5 "></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <h1>Profile</h1>
+            <fieldset>
+              <h2>Profile Information</h2>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label>First name *</label>
+                    <input id="name" name="name" type="text" class="form-control required">
+                  </div>
+                  <div class="form-group">
+                    <label>Last name *</label>
+                    <input id="surname" name="surname" type="text" class="form-control required">
+                  </div>
+                  <div class="form-group">
+                    <label>Phone *</label>
+                    <input id="phone" name="phone" type="number" class="form-control required">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label>Email *</label>
+                    <input id="email" name="email" type="text" class="form-control required email">
+                  </div>
+                  <div class="form-group">
+                    <label>Address *</label>
+                    <input id="address" name="address" type="text" class="form-control required">
+                    <input style="display: none" type="text" class="form-control" id="inputSelectedPlan" name="selectedPlan">
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <h1>Business Profile</h1>
+            <fieldset>
+              <div class="text-center" style="margin-top: 120px">
+                <h2>You did it Man :-)</h2>
+              </div>
+            </fieldset>
+            <h1>Select Plan</h1>
+            <fieldset>
+              <div class="text-center">
+                <section class="pricing-section">
+                  <div class="pricing">
+                    <div class="pricing-body">
+                      <div class="pricing-body-header">
+                        <h2>Choose a plan</h2>
+                        <div class="pricing-checkbox">
+                          <span for="pricing__monthly">Billed monthly</span>
+                          <div id="custom-checkbox">
+                            <div class="annual"></div>
+                          </div>
+                          <span for="pricing__anually">Billed anually</span>
+                        </div>
+                      </div>
+                      <div class="pricing-body-plans">
+                        <div class="active" id="pricing__monthly__plan">
+                          <div>
+                            <div class="card card1">
+                              <div class="card-header">
+                                <span class="card-title">Free</span>
+                                <div class="card-users">
+                                  <h2 class="card-price" style="float: left;margin-right: 5px;margin-top: -7px;">$0</h2>
+                                  <span>user/month</span>
+                                </div>
+                              </div>
+                              <div class="card-body">
+                                <ul>
+                                  <li>Unlimited appointments</li>
+                                  <li>Accept payments</li>
+                                  <li>Your custom Booking Page</li>
+                                  <li>iOS and Android web apps</li>
+                                  <li>Customized notifications</li>
+                                  <li>Email reminders</li>
+                                  <li>Integrate with your favorite apps</li>
+                                </ul>
+                              </div>
+                              <div class="card-footer">
+                                <div class="buttonPln" data-card="card1" data-plan="free-monthly">Choose Plan</div>
+                              </div>
+                            </div>
+                            <div class="card card2">
+                              <div class="card-header">
+                                <span class="card-title">Pro</span>
+                                <div class="card-users">
+                                  <h2 class="card-price" style="float: left;margin-right: 5px;margin-top: -7px;">$12</h2>
+                                  <span>user/month</span>
+                                </div>
+                              </div>
+                              <div class="card-body">
+                                <ul>
+                                  <li>Unlimited appointments</li>
+                                  <li>Accept payments</li>
+                                  <li>Your custom Booking Page</li>
+                                  <li>iOS and Android web apps</li>
+                                  <li>Customized notifications</li>
+                                  <li>Email reminders</li>
+                                  <li>Integrate with your favorite apps</li>
+                                  <li>Recurring appointments</li>
+                                  <li>2-way calendar sync</li>
+                                  <li>Remove Barbreon's branding</li>
+                                </ul>
+                              </div>
+                              <div class="card-footer">
+                                <div class="buttonPln" data-card="card2" data-plan="pro-monthly">Choose Plan</div>
+                              </div>
+                            </div>
+                            <div class="card card3">
+                              <div class="card-header">
+                                <span class="card-title">Business</span>
+                                <div class="card-users">
+                                  <h2 class="card-price" style="float: left;margin-right: 5px;margin-top: -7px;">$9</h2>
+                                  <span>user/month</span>
+                                </div>
+                              </div>
+                              <div class="card-body">
+                                <ul>
+                                  <li>Unlimited appointments</li>
+                                  <li>Accept payments</li>
+                                  <li>Your custom Booking Page</li>
+                                  <li>iOS and Android web apps</li>
+                                  <li>Customized notifications</li>
+                                  <li>Email reminders</li>
+                                  <li>Integrate with your favorite apps</li>
+                                  <li>Recurring appointments</li>
+                                  <li>2-way calendar sync</li>
+                                  <li>Remove Barbreon's branding</li>
+                                  <li>Infinite users</li>
+                                </ul>
+                              </div>
+                              <div class="card-footer">
+                                <div class="buttonPln" data-card="card3" data-plan="business-monthly">Choose Plan</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="pricing__anually__plan">
+                          <div>
+                            <div class="card card1">
+                              <div class="card-header">
+                                <span class="card-title">Free</span>
+                                <div class="card-users">
+                                  <h2 class="card-price" style="float: left;margin-right: 5px;margin-top: -7px;">$0</h2>
+                                  <span>user/month</span>
+                                </div>
+                              </div>
+                              <div class="card-body">
+                                <ul>
+                                  <li>Unlimited appointments</li>
+                                  <li>Accept payments</li>
+                                  <li>Your custom Booking Page</li>
+                                  <li>iOS and Android web apps</li>
+                                  <li>Customized notifications</li>
+                                  <li>Email reminders</li>
+                                  <li>Integrate with your favorite apps</li>
+                                </ul>
+                              </div>
+                              <div class="card-footer">
+                                <div class="buttonPln" data-card="card1" data-plan="free-annual">Choose Plan</div>
+                              </div>
+                            </div>
+                            <div class="card card2">
+                              <div class="card-header">
+                                <span class="card-title">Pro</span>
+                                <div class="card-users">
+                                  <h2 class="card-price" style="float: left;margin-right: 5px;margin-top: -7px;">$5</h2>
+                                  <span>user/month</span>
+                                </div>
+                              </div>
+                              <div class="card-body">
+                                <ul>
+                                  <li>Unlimited appointments</li>
+                                  <li>Accept payments</li>
+                                  <li>Your custom Booking Page</li>
+                                  <li>iOS and Android web apps</li>
+                                  <li>Customized notifications</li>
+                                  <li>Email reminders</li>
+                                  <li>Integrate with your favorite apps</li>
+                                  <li>Recurring appointments</li>
+                                  <li>2-way calendar sync</li>
+                                  <li>Remove Barbreon's branding</li>
+                                </ul>
+                              </div>
+                              <div class="card-footer">
+                                <div class="buttonPln" data-card="card2" data-plan="pro-annual">Choose Plan</div>
+                              </div>
+                            </div>
+                            <div class="card card3">
+                              <div class="card-header">
+                                <span class="card-title">Business</span>
+                                <div class="card-users">
+                                  <h2 class="card-price" style="float: left;margin-right: 5px;margin-top: -7px;">$5</h2>
+                                  <span>user/month</span>
+                                </div>
+                              </div>
+                              <div class="card-body">
+                                <ul>
+                                  <li>Unlimited appointments</li>
+                                  <li>Accept payments</li>
+                                  <li>Your custom Booking Page</li>
+                                  <li>iOS and Android web apps</li>
+                                  <li>Customized notifications</li>
+                                  <li>Email reminders</li>
+                                  <li>Integrate with your favorite apps</li>
+                                  <li>Recurring appointments</li>
+                                  <li>2-way calendar sync</li>
+                                  <li>Remove Barbreon's branding</li>
+                                  <li>Infinite users</li>
+                                </ul>
+                              </div>
+                              <div class="card-footer">
+                                <div class="buttonPln" data-card="card3" data-plan="business-annual">Choose Plan</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </fieldset>
+            <h1>Generate business portal</h1>
+            <fieldset>
+              <h2>Terms and Conditions</h2>
+              <input id="acceptTerms" name="acceptTerms" type="checkbox" class="required"> <label for="acceptTerms">I agree with the Terms and Conditions.</label>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Mainly scripts -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="js/inspinia.js"></script>
+<script src="js/plugins/pace/pace.min.js"></script>
+
+<!-- Steps -->
+<script src="js/plugins/steps/jquery.steps.min.js"></script>
+
+<!-- Jquery Validate -->
+<script src="js/plugins/validate/jquery.validate.min.js"></script>
+
+
+<script>
+  $(document).ready(function(){
+    $("#wizard").steps();
+    $("#form").steps({
+      bodyTag: "fieldset",
+      onStepChanging: function (event, currentIndex, newIndex)
+      {
+        // Always allow going backward even if the current step contains invalid fields!
+        if (currentIndex > newIndex)
+        {
+          return true;
+        }
+
+        // Forbid suppressing "Warning" step if the user is to young
+        if (newIndex === 3 && Number($("#age").val()) < 18)
+        {
+          return false;
+        }
+
+        var form = $(this);
+
+        // Clean up if user went backward before
+        if (currentIndex < newIndex)
+        {
+          // To remove error styles
+          $(".body:eq(" + newIndex + ") label.error", form).remove();
+          $(".body:eq(" + newIndex + ") .error", form).removeClass("error");
+        }
+
+        // Disable validation on fields that are disabled or hidden.
+        form.validate().settings.ignore = ":disabled,:hidden";
+
+        // Start validation; Prevent going forward if false
+        return form.valid();
+      },
+      onStepChanged: function (event, currentIndex, priorIndex)
+      {
+        // Suppress (skip) "Warning" step if the user is old enough.
+        if (currentIndex === 2 && Number($("#age").val()) >= 18)
+        {
+          $(this).steps("next");
+        }
+
+        // Suppress (skip) "Warning" step if the user is old enough and wants to the previous step.
+        if (currentIndex === 2 && priorIndex === 3)
+        {
+          $(this).steps("previous");
+        }
+      },
+      onFinishing: function (event, currentIndex)
+      {
+        var form = $(this);
+
+        // Disable validation on fields that are disabled.
+        // At this point it's recommended to do an overall check (mean ignoring only disabled fields)
+        form.validate().settings.ignore = ":disabled";
+
+        // Start validation; Prevent form submission if false
+        return form.valid();
+      },
+      onFinished: function (event, currentIndex)
+      {
+        var form = $(this);
+
+        // Submit form input
+        form.submit();
+      }
+    }).validate({
+      errorPlacement: function (error, element)
+      {
+        element.before(error);
+      },
+      rules: {
+        confirm: {
+          equalTo: "#password"
+        }
+      }
+    });
+  });
+</script>
+<script type="text/javascript">
+
+  $(document).ready(function() {
+    const planBtn = document.getElementById("custom-checkbox");
+    const plans = document.querySelectorAll(".pricing-body-plans > div");
+    planBtn.addEventListener("click", function() {
+       this.classList.toggle("anually");
+       plans[0].classList.toggle("active");
+       plans[1].classList.toggle("active");
+    });
+    $('.buttonPln').on ("click", function() {
+      var plan = $(this).attr('data-plan');
+      var containerSelected = $(this).attr('data-card');
+      $('#inputSelectedPlan').val(plan);
+      /*$('.card').removeClass('selectedPlan');*/
+      $('.'+containerSelected).addClass('selectedPlan');
+    });
+    /*$('#registration-form').submit(function (e) {
+      e.preventDefault();
+      var name = $('#inputName').val();
+      var surname = $('#inputSurname').val();
+      var email = $('#inputEmail').val();
+      var phone = $('#inputPhone').val();
+      var address = $('#inputAddress').val();
+      var public_name = $('#inputPublicName').val();
+      var plan = $("input[name='plan']:checked").val();
+      $.ajax({
+        type: 'POST',
+        url: 'backend.php',
+        data: {
+          name: name,
+          surname: surname,
+          email: email,
+          phone: phone,
+          address: address,
+          public_name: public_name,
+          plan: plan
+        },
+        success: function (data) {
+          $('#form-result').html(data);
+        }
+      })
+    })*/
+  });
+  </script>

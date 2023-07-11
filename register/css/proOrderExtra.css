@@ -1,0 +1,494 @@
+.btn-primary-custom{
+  background-color: #1d1d1d;
+  font-size: 25px;
+  padding: 0px 10px 0px 10px;
+  margin-top: -2px;
+  border-radius: 10px;
+  color: red;
+}
+
+.btn-primary-custom:hover{
+  background-color: red;
+  color:#1d1d1d;
+}
+
+.vertical-timeline-content::before {
+  border: 0px!important;
+}
+.vertical-timeline-content::before {
+  display:none!important;
+}
+.vertical-timeline-icon {
+
+  background-color:#ffffff00!important;
+  border: none!important;
+}
+.label-warning .label-success .label-danger{
+  float: none;
+  font-size: 10px;
+  padding-top: initial;
+}
+.flagsMobile{
+  display:none;
+}
+.flagsMobile2{
+  display:none!important;
+}
+.userOnMap{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 45px;
+  padding-right: 7px;
+  border-left: 2px solid #0caa71;
+  padding-left: 5px;
+  padding-top: 4px;
+  background-color: #2d2d2d;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+@media (max-width: 768px) {
+  .userOnMap .mobhid{
+    display:none;
+  }
+  .flagsMobile{
+    -webkit-transition: all 0.3s cubic-bezier(0.275, -0.450, 0.725, 1.450);
+    -moz-transition: all 0.3s cubic-bezier(0.275, -0.450, 0.725, 1.450);
+    -o-transition: all 0.3s cubic-bezier(0.275, -0.450, 0.725, 1.450);
+    transition: all 0.3s cubic-bezier(0.275, -0.450, 0.725, 1.450);
+    display: block;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .flagsMobile2{
+    display:block!important;
+    -webkit-transition: all 0.3s cubic-bezier(0.275, -0.450, 0.725, 1.450);
+    -moz-transition: all 0.3s cubic-bezier(0.275, -0.450, 0.725, 1.450);
+    -o-transition: all 0.3s cubic-bezier(0.275, -0.450, 0.725, 1.450);
+    transition: all 0.3s cubic-bezier(0.275, -0.450, 0.725, 1.450);
+    box-shadow: 0px 0px 50px -10px black;
+    position: fixed;
+    top: 0px;
+    z-index: 9;
+    left: 0px;
+    width:99%;
+  }
+
+  .flagsMobileOpen {
+    top: 0px!important;
+  }
+
+  .flagsPC{
+    display:none!important;
+  }
+
+  .col-lg-12,.col-lg-6,.col-md-5{
+    padding:0px!important;
+  }
+  .mainCont{
+    display:block!important;
+  }
+  .buttonsPc{
+    display:none!important;
+  }
+}
+.mobbuts{
+  display:none;
+  position: fixed;
+  bottom: 0px;
+  z-index: 9999999;
+  width: 100%;
+  height: 110px;
+  background-color: #070b10;;
+  left: 0px;
+  text-align: center;
+  box-shadow: 0px 40px 40px 40px black;
+  -webkit-transition: all 0.3s cubic-bezier(0.275, -0.450, 0.725, 1.450);
+  -moz-transition: all 0.3s cubic-bezier(0.275, -0.450, 0.725, 1.450);
+  -o-transition: all 0.3s cubic-bezier(0.275, -0.450, 0.725, 1.450);
+  transition: all 0.3s cubic-bezier(0.275, -0.450, 0.725, 1.450);
+}
+
+.mobbutsOpen{
+  height: 460px!important;
+}
+
+.vertical-timeline-content {
+  position: relative;
+  margin-left: 0px;
+  background: #1d1d1d;
+  border-radius: 0.25em;
+  padding-left: 5px;
+  padding-right: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+}
+
+.vertical-timeline-content::before {
+  border-right: 7px solid #1d1d1d;
+}
+.vertical-timeline-block {
+  margin: 2px 0!important;
+}
+#trHandleMsgError{
+  width:100%;
+  position:absolute;
+  z-index:999999999999;
+  height:100%;
+  background-color: #000000c7;
+  top: 0px;
+}
+
+#headLoader{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.trErroBoxDisplNewMaker{
+  width: 20%;
+  background-color: #060606;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.trErroBoxDisplNew {
+    text-align: center;
+    width: 60%;
+    min-height: 700px;
+    height: auto;
+    border: 1px solid #7f7f7f;
+    border-radius: 5px;
+    background-color: #060606;
+    background-image: url(https://gintonic.instaswap.io/images/NewLogos/TAURUSDARKBG.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: -290px;
+}
+
+
+#assignInfoPanel{
+  display:none;
+  height: 70px;
+  padding:5px;
+}
+
+#KYTInfoPanel{
+  display:none;
+  height: 70px;
+  padding:5px;
+}
+
+#KYCInfoPanel{
+  display:none;
+  height: 70px;
+  padding:5px;
+}
+
+#mainTransactionLog{
+  height: 400px;
+  background-color: #2d2d2d;
+  margin-left: -18px;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+#mainTransactionLogDetails{
+  height: 400px;
+  background-color: rgba(45, 45, 45, 0.85);
+  border-radius: 10px;
+  max-width: 53%;
+  margin-right: 25px;
+  margin-left: 20px;
+}
+
+#KYTExtraNotice{
+  display: none;
+  background-color: #8b0000;
+  border-radius: 10px;
+  margin-top: 5px;
+  text-align: initial;
+  padding: 10px;
+}
+
+.externalLinkCustom{
+  font-size: 20px;
+  color: darkgray;
+  transform: rotate3d(0, 0, 1, 270deg);
+  height: auto;
+  margin-top: 10px;
+  margin-right: -33px;
+  margin-left: 10px;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+
+
+.chatLineRowAnotherUserCustom > .chatUserMessage:after {
+  content: "";
+  width: 30%;
+  position: absolute;
+  bottom: -1px;
+  right: -40px;
+  background-color: #2d2d2d;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  height: 102%;
+}
+
+#trHandleCloseMsg{
+  position: absolute;
+  right: 0px;
+  top: 1px;
+  z-index: 999999999;
+  font-size: 25px;
+  cursor: pointer;
+  font-weight: 900;
+  border-radius: 50px;
+  padding: 0px 11px 1px 11px;
+}
+
+
+
+#headLoader{
+  background-color: #121212;
+  margin-left: -20px;
+  height: 100%;
+}
+
+
+.customLogButton{
+    width:100%;margin-bottom:10px;background-color: #292929;border-color: #7f7f7f;
+}
+
+.customLogButton:hover {
+    background-color: #4b3737!important;
+    border-color: #000000!important;
+}
+
+
+
+.dateTimeStampExecutionTime{
+  position: absolute;
+  right: 10px;
+  font-size: 11px;
+  bottom: 10px;
+}
+
+
+
+.trErroBoxDispl {
+  text-align: center;
+  width: 30%;
+  height: auto;
+  border: 1px solid #001f11;
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px -10px #ffffff;
+  background-color: #017339;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: -290px;
+}
+
+@media (max-width: 1500px) {
+  .trErroBoxDispl {
+    width: 40%!important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .trErroBoxDispl {
+    width: 50%!important;
+  }
+}
+@media (max-width: 768px) {
+  .trErroBoxDispl {
+    width: 80%!important;
+  }
+}
+
+@media (max-width: 768px) {
+  .customMobileArrow{
+    right:15px!important;
+  }
+  .trErroBoxDispl {
+    width: 80%!important;
+  }
+  .customProHeader{
+    position: absolute;
+    width: 200px;
+    right: -20px;
+    line-height: 40px;
+    top: -7px;
+  }
+  .customProHeader span{
+    font-size:15px!important;
+  }
+  .page-heading{
+    padding:0px!important;
+  }
+  #userInfosContent{
+    margin-left: 0px!important;
+  }
+  .customVerticalIcon{
+    margin-left:-20px!important;
+  }
+  .mobileCutomHeader{
+    text-align:end!important;
+  }
+  .hideMobile{
+    display:none!important;
+  }
+  .marginOnMobile{
+    margin-top:10px!important;
+  }
+  .vertical-timeline-content{
+    text-align:center!important;
+  }
+  .accisiateRow{
+    margin-bottom: 70px;
+  }
+  .customUserDet{
+    text-align:center;
+  }
+}
+
+.customProHeader{
+  padding-top: 20px;text-align:end;
+}
+.customProHeader span{
+  font-size:25px;
+}
+#userInfosContent{
+  margin-left: 5px;
+}
+.customVerticalIcon{
+  margin-left:-13px;
+}
+.ibox-content{
+  padding-top:0px;
+}
+.border-bottom{
+  border-bottom: 10px solid #2d2d2d!important;
+  border-radius: 10px;
+}
+
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #1d1d1d;
+  overflow: hidden;
+}
+
+.accordion {
+  background-color: #212121;
+  color: whitesmoke;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.9s;
+}
+
+.active, .accordion:hover {
+  background-color: #1d1d1d;
+}
+
+.accordion:before {
+  content: '\002B';
+  color: #fff;
+  font-weight: bold;
+  float: right;
+  left: 10px;
+  position: absolute;
+  font-size: 30px;
+}
+
+/*
+.active:before {
+  content: "\2212";
+}
+*/
+
+
+
+.sumDepositEurWarning{
+  border: 1px solid #c45e36;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  color: black;
+  margin-right: auto;
+  border-radius: 10px;
+  background-color: darkorange;
+  font-weight: 900;
+  font-size: 17px;
+}
+
+.sumDepositEurOK{
+  border: 1px solid #008000;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  color: white;
+  margin-right: auto;
+  border-radius: 10px;
+  font-weight: 900;
+  font-size: 17px;
+}
+
+
+.sumDepositEurERROR{
+  border: 1px solid #fe0000;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  color: white;
+  margin-right: auto;
+  border-radius: 10px;
+  font-weight: 900;
+  font-size: 17px;
+  background-color: #fe0000;
+}
+
+.customRowForEurConvert{
+  padding: 10px 0px 0px 0px;
+  margin-bottom: 10px;
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: -10px;
+  border-radius: 20px;
+  background-color: #1d1d1d;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 65px;
+}
+
+
+.selectedNetwork{
+  font-size: 30px;
+  margin-top: -9px;
+  position: relative;
+  top: 5px;
+  margin-left: 10px;
+  left: -10px;
+  color: #118259;
+}

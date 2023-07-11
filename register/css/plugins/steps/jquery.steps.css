@@ -1,0 +1,702 @@
+/*
+    Common
+*/
+
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+.ibox{
+    margin-bottom: 0px!important;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    height:100%;
+}
+.ibox-content{
+    min-height: 92%;
+}
+.container {
+    color: white;
+    padding-top: 0px;
+    height:100%;
+}
+
+.plan-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.plan-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #888888;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 20px;
+    width:30%;
+}
+
+.plan-card h4 {
+    margin-bottom: 30px;
+}
+
+.plan-card .plan-price {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.plan-card .plan-price span {
+    font-size: 14px;
+}
+
+.plan-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plan-card ul li {
+    margin-bottom: 10px;
+}
+
+.plan-card div {
+    background-color: #1d1d1d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.plan-card div:hover {
+    background-color: white;
+    color: #1d1d1d;
+}
+
+.selected-plan {
+    background-color: #ffa64d !important;
+    color: white !important;
+}
+
+.selected-plan:hover {
+    background-color: white !important;
+    color: #ffa64d !important;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #191b1d;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+}
+
+section.pricing-section {
+    width: 100%;
+}
+section.pricing-section .pricing {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+section.pricing-section .pricing .pricing-header {
+    background-color: #0a9465;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 12px;
+    padding: 20px 70px;
+    border-radius: 0px 0px 8px 8px;
+}
+section.pricing-section .pricing .pricing-header p {
+    font-weight: 300;
+}
+section.pricing-section .pricing .pricing-header h3 {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+section.pricing-section .pricing .pricing-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-header h2 {
+    font-weight: 500;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-header .pricing-checkbox {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-header .pricing-checkbox span {
+    font-size: 14px;
+    color: #b5b6b8;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-header .pricing-checkbox > div {
+    width: 45px;
+    background: #0a9465;
+    height: 24px;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-header .pricing-checkbox > div div {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-header .pricing-checkbox > div.anually div {
+    left: unset;
+    right: 3px;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div {
+    display: none;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div {
+    display: flex;
+    column-gap: 17px;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card {
+    background-color: #2d2d2d;
+    padding: 25px;
+    border-radius: 8px;
+    width: 270px;
+    position: relative;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card .card-header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card .card-header .card-title {
+    font-weight: 400;
+    font-size: 14px;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card .card-header .card-price {
+    font-size: 26px;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card .card-header .card-users input {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #35393e;
+    padding: 10px;
+    color: #b5b6b8;
+    text-align: center;
+    outline: none;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card .card-header .card-users span {
+    font-size: 12px;
+    color: #0a9465;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card .card-body {
+    margin-top: 30px;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card .card-body ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column;
+    row-gap: 8px;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card .card-body ul li {
+    color: #b5b6b8;
+    position: relative;
+    font-size: 14px;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card .card-body ul li::before {
+    content: "•";
+    color: #0a9465;
+    font-weight: bold;
+    width: 20px;
+    margin-left: -18px;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card .card-footer {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card .card-footer div {
+    border: 1px solid #0a9465;
+    background: transparent;
+    padding: 10px 25px;
+    color: #b5b6b8;
+    cursor: pointer;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card .card-footer div:hover {
+    background: #0a9465;
+    color: #fff;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card:nth-of-type(2) .card-footer div {
+    background: #0a9465;
+    color: #fff;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div .card:nth-of-type(2) .card-footer div:hover {
+    background: transparent;
+    color: #b5b6b8;
+}
+section.pricing-section .pricing .pricing-body .pricing-body-plans > div.active {
+    display: block;
+}
+
+@media screen and (max-width: 900px) {
+    section.pricing-section {
+        width: 100%;
+        height: auto;
+    }
+    section.pricing-section .pricing .pricing-header {
+        width: 60%;
+        padding: 20px 50px;
+    }
+    section.pricing-section .pricing .pricing-body {
+        margin-top: 780px;
+        padding-bottom: 50px;
+    }
+    section.pricing-section .pricing .pricing-body .pricing-body-plans > div > div {
+        flex-direction: column;
+        row-gap: 17px;
+    }
+}
+@media screen and (max-width: 500px) {
+    section.pricing-section .pricing .pricing-header {
+        width: 100%;
+        padding: 20px 50px;
+        position: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+    }
+    section.pricing-section .pricing .pricing-header p {
+        font-size: 14px;
+    }
+    section.pricing-section .pricing .pricing-header h3 {
+        font-size: 18px;
+    }
+    section.pricing-section .pricing .pricing-body {
+        margin-top: 50px;
+        position: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+    }
+}
+.card-body{
+    padding: 0px;
+    text-align: initial;
+}
+.wizard,
+.tabcontrol
+{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wizard a,
+.tabcontrol a
+{
+    outline: 0;
+}
+
+.wizard ul,
+.tabcontrol ul
+{
+    list-style: none !important;
+    padding: 0;
+    margin: 0;
+}
+
+.wizard ul > li,
+.tabcontrol ul > li
+{
+    display: block;
+    padding: 0;
+}
+
+/* Accessibility */
+.wizard > .steps .current-info,
+.tabcontrol > .steps .current-info
+{
+    position: absolute;
+    left: -999em;
+}
+
+.wizard > .content > .title,
+.tabcontrol > .content > .title
+{
+    position: absolute;
+    left: -999em;
+}
+
+
+
+/*
+    Wizard
+*/
+
+.wizard > .steps
+{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.wizard.vertical > .steps
+{
+    display: inline;
+    float: left;
+    width: 30%;
+}
+
+.wizard > .steps > ul > li
+{
+    width: 20%;
+}
+
+.wizard > .steps > ul > li,
+.wizard > .actions > ul > li
+{
+    float: left;
+}
+
+.wizard.vertical > .steps > ul > li
+{
+    float: none;
+    width: 100%;
+}
+
+.wizard > .steps a,
+.wizard > .steps a:hover,
+.wizard > .steps a:active
+{
+    display: block;
+    width: auto;
+    margin: 0 0.5em 0.5em;
+    padding: 8px;
+    text-decoration: none;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.wizard > .steps .disabled a,
+.wizard > .steps .disabled a:hover,
+.wizard > .steps .disabled a:active
+{
+    background: #1d1d1d;;
+    color: #aaa;
+    cursor: default;
+}
+
+.wizard > .steps .current a,
+.wizard > .steps .current a:hover,
+.wizard > .steps .current a:active
+{
+    background: #0a9465;
+    color: #fff;
+    cursor: default;
+}
+
+.wizard > .steps .done a,
+.wizard > .steps .done a:hover,
+.wizard > .steps .done a:active
+{
+    background: #0ac088;
+    color: #fff;
+}
+
+.wizard > .steps .error a,
+.wizard > .steps .error a:hover,
+.wizard > .steps .error a:active
+{
+    background: #ED5565 ;
+    color: #fff;
+}
+
+.wizard > .content
+{
+    background: #1d1d1d;
+    display: block;
+    margin: 5px 5px 10px 5px;
+    min-height: 120px;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.wizard-big.wizard > .content {
+    min-height: 320px;
+}
+.wizard.vertical > .content
+{
+    display: inline;
+    float: left;
+    margin: 0 2.5% 0.5em 2.5%;
+    width: 65%;
+}
+
+.wizard > .content > .body
+{
+    float: left;
+    position: absolute;
+    width: 100%;
+    height: 95%;
+    padding: 2.5%;
+    padding-top: 0px;
+}
+
+.wizard > .content > .body ul
+{
+    /*list-style: disc !important;*/
+}
+
+.wizard > .content > .body ul > li
+{
+    display: list-item;
+}
+
+.wizard > .content > .body > iframe
+{
+    border: 0 none;
+    width: 100%;
+    height: 100%;
+}
+
+.wizard > .content > .body input
+{
+    display: block;
+    border: 1px solid #ccc;
+}
+
+.wizard > .content > .body input[type="checkbox"]
+{
+    display: inline-block;
+}
+
+.wizard > .content > .body input.error
+{
+    background: rgb(251, 227, 228);
+    border: 1px solid #fbc2c4;
+    color: #8a1f11;
+}
+
+.wizard > .content > .body label
+{
+    display: inline-block;
+    margin-bottom: 0.5em;
+}
+
+.wizard > .content > .body label.error
+{
+    color: #8a1f11;
+    display: inline-block;
+    margin-left: 1.5em;
+}
+
+.wizard > .actions
+{
+    position: relative;
+    display: block;
+    text-align: right;
+    width: 100%;
+}
+
+.wizard.vertical > .actions
+{
+    display: inline;
+    float: right;
+    margin: 0 2.5%;
+    width: 95%;
+}
+
+.wizard > .actions > ul
+{
+    display: inline-block;
+    text-align: right;
+}
+
+.wizard > .actions > ul > li
+{
+    margin: 0 0.5em;
+}
+
+.wizard.vertical > .actions > ul > li
+{
+    margin: 0 0 0 1em;
+}
+
+.wizard > .actions a,
+.wizard > .actions a:hover,
+.wizard > .actions a:active
+{
+    background: #0a9465;
+    color: #fff;
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.wizard > .actions .disabled a,
+.wizard > .actions .disabled a:hover,
+.wizard > .actions .disabled a:active
+{
+    background: #eee;
+    color: #aaa;
+}
+
+.wizard > .loading
+{
+}
+
+.wizard > .loading .spinner
+{
+}
+
+
+
+/*
+    Tabcontrol
+*/
+
+.tabcontrol > .steps
+{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.tabcontrol > .steps > ul
+{
+    position: relative;
+    margin: 6px 0 0 0;
+    top: 1px;
+    z-index: 1;
+}
+
+.tabcontrol > .steps > ul > li
+{
+    float: left;
+    margin: 5px 2px 0 0;
+    padding: 1px;
+
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.tabcontrol > .steps > ul > li:hover
+{
+    background: #edecec;
+    border: 1px solid #bbb;
+    padding: 0;
+}
+
+.tabcontrol > .steps > ul > li.current
+{
+    background: #fff;
+    border: 1px solid #bbb;
+    border-bottom: 0 none;
+    padding: 0 0 1px 0;
+    margin-top: 0;
+}
+
+.tabcontrol > .steps > ul > li > a
+{
+    color: #5f5f5f;
+    display: inline-block;
+    border: 0 none;
+    margin: 0;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.tabcontrol > .steps > ul > li > a:hover
+{
+    text-decoration: none;
+}
+
+.tabcontrol > .steps > ul > li.current > a
+{
+    padding: 15px 30px 10px 30px;
+}
+
+.tabcontrol > .content
+{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 35em;
+    overflow: hidden;
+    border-top: 1px solid #bbb;
+    padding-top: 20px;
+}
+
+.tabcontrol > .content > .body
+{
+    float: left;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+}
+
+.tabcontrol > .content > .body ul
+{
+    list-style: disc !important;
+}
+
+.tabcontrol > .content > .body ul > li
+{
+    display: list-item;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none!important;
+    margin: 0!important;
+}
+
+
+
+.selectedPlan{
+    border: 3px solid #0ac088;
+}
